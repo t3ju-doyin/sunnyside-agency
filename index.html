@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sunnyside.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Sunnyside Agency</title>
+</head>
+<body>
+    <section class="hero">
+        <nav class="nav">
+            <div class="nav container">
+                <div class="logo">sunnyside</div>
+                <ul id="hidden">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li class="special">Contact</li>
+                </ul>
+                <div class="mobile-nav">
+                    <div id="mobile-menu">
+                        <img src="icon-hamburger.svg" alt="">
+                    </div>
+                    <div id="mobile-menu-exit">
+                        <img src="exit.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="slang">
+            <h2>WE ARE CREATIVES</h2>
+            <img src="icon-arrow-down.svg" alt="an arrow pointig down" class="arrow" width="3%">
+        </div>
+    </section>
+    <section class="grid-container">
+        <div class="block one">
+            <img class="egg" src="mobile/image-transform.jpg" alt="">
+            <div class="story">
+                <h4>Transform your brand</h4>
+                <p>We are a full-service creative agency specializing in helping brands grow fast.
+                 Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="yellow">LEARN MORE
+                    <div class="line"></div> </a>
+                
+            </div>
+
+        </div>
+        <div class="block two">
+            <img src="mobile/image-stand-out.jpg" alt="">
+            <div class="story">
+                <h4>Stand out to the right audience</h4>
+                <p> Using a collaborative formula of designers, researchers, photographers, videographers,
+                     and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a href="#" class="red">LEARN MORE 
+                    <div class="line"></div> </a>
+            </div>
+        </div>
+        <div class="block">
+            <div class=" three">
+                <div class="story-three ">
+                    <h4>Graphic Design</h4>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand
+                         message and captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div class=" four">
+                <div class="story-four">
+                    <h4>Photography</h4>
+                    <p> Increase your credibility by getting the most stunning,
+                        high-quality photos that improve your business image.</p>
+                </div>
+        </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h6>CLIENT TESTIMONIALS</h6>
+            <div class="people">
+                <div class="person">
+                    <img src="image-emily.jpg" alt="">
+                    <p>We put our trust in Sunnyside and they
+                        delivered, making sure our needs were met and
+                        deadlines were always hit</p>
+                    <div class="name">
+                        <h5 >Emily R.</h5>
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="image-thomas.jpg" alt="">
+                    <p> Sunnyside’s enthusiasm coupled with
+                         their keen interest in our brand’s success
+                          made it a satisfying and enjoyable experience. </p>
+                    <div class="name">
+                        <h5 >Thomas S.</h5>
+                        <p>Chief Operating Officer</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="image-jennie.jpg" alt="">
+                    <p> Incredible end result! Our sales increased
+                        over 400% when we worked with Sunnyside.
+                         Highly recommended! </p>
+                    <div class="name">
+                        <h5 >Jennie F.</h5>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="random-images">
+        <div class="images-container">
+            
+                <img src="desktop/image-gallery-milkbottles.jpg" alt="">
+                <img src="desktop/image-gallery-orange.jpg" alt="">
+            
+                <img src="desktop/image-gallery-cone.jpg" alt="">
+                <img src="desktop/image-gallery-sugarcubes.jpg" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <h3>sunnyside</h3>
+            <ul class="more-details">
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+            </ul>
+            <ul class="bottom-contacts">
+                <li><img src="icon-facebook.svg" alt=""></li>
+                <li><img src="icon-instagram.svg" alt=""></li>
+                <li><img src="icon-twitter.svg" alt=""></li>
+                <li><img src="icon-pinterest.svg" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const menu = document.querySelector('ul')
+        const mobileBtn = document.getElementById('mobile-menu')
+        const mobileBtnExit = document.getElementById('mobile-menu-exit')
+        mobileBtn.addEventListener('click',()=>{
+            menu.style.visibility = 'visible'
+            mobileBtnExit.style.display = 'block' 
+            mobileBtn.style.display= 'none'
+        })
+        mobileBtnExit.addEventListener('click',()=>{
+            menu.style.visibility = 'hidden'
+            mobileBtn.style.display= 'block'
+            mobileBtnExit.style.display= 'none'
+
+
+        })
+    </script>
+</body>
+</html>

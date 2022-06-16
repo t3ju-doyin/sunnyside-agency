@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body h5, body h2, body h4, body a {
+  font-family: "Fraunces", serif;
+}
+body p, body ul {
+  font-family: "Barlow", sans-serif;
+}
+body ul {
+  list-style: none;
+}
+body li {
+  cursor: pointer;
+}
+
+section.hero {
+  background-image: url("desktop/image-header.jpg");
+  max-width: 100%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+section.hero nav {
+  font-family: "Fraunces", serif;
+  color: hsl(0deg, 0%, 100%);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+section.hero nav ul#hidden {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  list-style: none;
+  position: absolute;
+  top: 3.3rem;
+  width: 90%;
+  background-color: white;
+  color: hsl(232deg, 10%, 55%);
+  padding: 3rem 0 2rem 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 89%, 100% 0, 91% 9%, 48% 9%, 0 9%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 89%, 100% 0, 91% 9%, 48% 9%, 0 9%);
+  transition: 0.2s;
+  visibility: hidden;
+}
+section.hero nav ul#hidden li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+section.hero nav ul#hidden li.special {
+  text-transform: uppercase;
+  color: hsl(212deg, 27%, 19%);
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: hsl(51deg, 100%, 49%);
+  font-family: "Fraunces", serif;
+  text-align: center;
+}
+section.hero nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+section.hero nav .container img {
+  width: 90%;
+  max-width: 100%;
+  cursor: pointer;
+}
+section.hero nav .container div#mobile-menu-exit {
+  position: relative;
+  display: none;
+}
+section.hero div.slang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 7rem;
+}
+section.hero div.slang h2 {
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 0 2rem 1rem 2rem;
+}
+section.hero div.slang img {
+  margin-bottom: 3rem;
+  width: 5%;
+}
+
+section.grid-container div.block img {
+  max-width: 100%;
+  width: 100vw;
+}
+section.grid-container div.block .story {
+  padding: 2rem 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+section.grid-container div.block .story h4 {
+  font-size: 1.5rem;
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 1rem;
+}
+section.grid-container div.block .story p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: hsl(213deg, 9%, 39%);
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+}
+section.grid-container div.block .story a {
+  color: hsl(212deg, 27%, 19%);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+section.grid-container div.block .story a.yellow div.line {
+  position: relative;
+  z-index: -1;
+  bottom: 7px;
+  height: 7px;
+  width: 6.2rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  opacity: 0.3;
+  background-color: hsl(51deg, 100%, 49%);
+}
+section.grid-container div.block .story a.red div.line {
+  position: relative;
+  z-index: -1;
+  bottom: 7px;
+  height: 7px;
+  width: 6.2rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  opacity: 0.3;
+  background-color: hsl(7deg, 99%, 70%);
+}
+section.grid-container div.block .story a:hover div.line {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+section.grid-container div.three {
+  background-image: url("desktop/image-graphic-design.jpg");
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+section.grid-container div.three .story-three {
+  padding: 17rem 0 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+section.grid-container div.three .story-three h4 {
+  font-size: 1.5rem;
+  color: hsl(167deg, 40%, 24%);
+  margin-bottom: 1rem;
+}
+section.grid-container div.three .story-three p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: hsl(167deg, 40%, 24%);
+  opacity: 0.9;
+}
+section.grid-container div.four {
+  background-image: url("desktop/image-photography.jpg");
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+section.grid-container div.four .story-four {
+  padding: 17rem 0 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+section.grid-container div.four .story-four h4 {
+  font-size: 1.5rem;
+  color: hsl(167deg, 40%, 24%);
+  margin-bottom: 1rem;
+}
+section.grid-container div.four .story-four p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: hsl(167deg, 40%, 24%);
+  opacity: 0.9;
+}
+
+section.testimonials div.testimonials-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+section.testimonials h6 {
+  color: hsl(232deg, 10%, 55%);
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+section.testimonials div.people .person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+section.testimonials div.people .person img {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+section.testimonials div.people .person p {
+  text-align: center;
+  color: hsl(213deg, 9%, 39%);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+section.testimonials div.people .person .name {
+  text-align: center;
+}
+section.testimonials div.people .person .name h5 {
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 0.4rem;
+}
+section.testimonials div.people .person .name p {
+  color: hsl(232deg, 10%, 55%);
+  opacity: 0.7;
+}
+
+section.random-images div.images-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+section.random-images div.images-container img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: hsl(168deg, 38%, 64%);
+}
+footer .footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+footer .footer-container h3 {
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.4rem;
+}
+footer .footer-container ul.more-details {
+  display: flex;
+  justify-content: space-around;
+  color: hsl(168deg, 34%, 41%);
+  margin-bottom: 3rem;
+}
+footer .footer-container ul.more-details li:hover {
+  color: hsl(0deg, 0%, 100%);
+  transition: 0.3s;
+}
+footer .footer-container ul.bottom-contacts {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+
+@media (min-width: 800px) {
+  body {
+    color: red !important;
+  }
+
+  section.hero nav {
+    width: 100% !important;
+  }
+  section.hero .nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  section.hero .nav ul {
+    z-index: 100 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    margin-right: auto;
+    padding: 0 !important;
+    visibility: visible !important;
+    background: none !important;
+    position: absolute;
+    color: hsl(0deg, 0%, 100%) !important;
+    position: initial !important;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  section.hero .nav ul li.special:hover {
+    background-color: hsla(0deg, 2%, 80%, 0.625) !important;
+    transition: 0.3s;
+    color: hsl(0deg, 0%, 100%) !important;
+  }
+  section.hero .nav img {
+    display: none;
+  }
+  section.hero div.slang h2 {
+    font-size: 2.5rem;
+  }
+  section.hero div.slang img {
+    width: 2% !important;
+  }
+
+  section.grid-container div.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  section.grid-container div.block .story {
+    text-align: left;
+    max-width: 250px;
+    font-size: 0.7rem;
+  }
+  section.grid-container div.block .story a {
+    margin-left: 5px;
+  }
+  section.grid-container div.block .story .line {
+    margin: 0 !important;
+  }
+  section.grid-container div.one img {
+    order: 1;
+  }
+
+  section.testimonials .testimonials-container {
+    width: 90% !important;
+    max-width: 900px;
+  }
+  section.testimonials .people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 !important;
+  }
+  section.testimonials .people .person {
+    flex-basis: 40%;
+    margin: 0 !important;
+  }
+
+  section.random-images .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-container {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=sunnyside.css.map */
